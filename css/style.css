@@ -1,53 +1,117 @@
 * {
-	color: #fff;
-	font-family: Helvetica;
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	font-family: "Comfortaa", sans-serif;
+	font-weight: bold;
+	letter-spacing: 1px;
+}
+
+body {
+	background-color: #278;
+}
+
+.container {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: #fff;
 
 }
 
-
-body {
+header {
 	width: 100%;
-	background-color: #2C3E50;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-transform: uppercase;
+	padding: 10px;
+	margin-bottom: 20px;
+	box-shadow: 4px 4px 10px -4px rgba(0,0,0,1);
+	text-shadow: 1px 1px 7px rgba(0,255,255,1);
+
+}
+
+.image-perfil {
+
+	width: 250px;
+	border-radius: 50%;
+}
+
+.container-skills {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.container-skills div {
+	display: flex;
+	align-items: center;
+	padding: 20px;
+}
+
+.container-skills p {
+	font-size: 0.9em;
+	font-weight: bold;
+	color: #fff;
+}
+
+.logo-skills {
+	width: 100px;
+}
+
+.logo-3 {
+	width: 145px;
+}
+
+
+.card {
+	display: flex;
+	flex-direction: column;
+	margin: 10px;
+	margin-top: 70px;
+	width: 300px;
+	height: 300px;
+	box-shadow: 4px 4px 31px -4px rgba(0,0,0,1);
+	align-items: center;
+	justify-content: center;
+
+}
+
+.card p {
 	text-align: center;
 }
 
-h1 {
-	font-size: 1.6em;
+.rodape {
+	margin-top: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
 }
 
-
-.menu ul li {
-	margin-top: 20px;
-	display:inline-block;
-
+.links-redes {
+	display: flex;
+	width: 100%;
+	justify-content: space-around;
 }
 
-.menu ul li a{
-	border-radius: 2px;
-	background-color: #345e71;
-	padding: 9px;
-	text-decoration: none;
-	transition: padding linear .2s .1s;
-}
-		
-.menu ul li a:hover {
-	padding: 16px;
+.direitos {
+	margin-top: 10px;
+	color: #fff;
+	font-size: 1em;
+	text-transform: capitalize;
 }
 
-.menu {
-	margin-bottom: 30px;
-	background-color: #22313F;
-	height: 60px;
-	box-shadow: 1px 1px 5px black;
+meter {
+	font-size: 2em;
 }
 
-.links-body {
-	margin-top: 20px;
-}
-
-.links-body a {
-	margin: 20px;
+@media (max-width: 400px) {
+	.image-perfil {
+		width: 80%;
+	}
 }
