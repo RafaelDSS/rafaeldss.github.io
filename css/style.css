@@ -35,7 +35,6 @@ header {
 }
 
 .image-perfil {
-
 	width: 250px;
 	border-radius: 50%;
 }
@@ -49,8 +48,8 @@ header {
 
 .container-skills div {
 	display: flex;
-	align-items: center;
-	padding: 20px;
+    align-items: center;
+    
 }
 
 .container-skills p {
@@ -78,7 +77,7 @@ header {
     box-shadow: 2px 2px 5px rgba(0,0,0,.5);
     border-radius: 10px;
 	align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     transition: transform .3s linear;
 
 }
@@ -114,8 +113,32 @@ header {
 	text-transform: capitalize;
 }
 
-meter {
-	font-size: 2em;
+
+.barra {
+    width: 200px;
+    height: 20px;
+    background-color: rgb(58, 132, 146);
+    border-radius: 20px;
+}
+
+.nivel-html,
+.nivel-css,
+.nivel-python {
+    background-color: #ffffff;
+    border-radius: 30px 0 0 30px;
+    height: 100%;
+}
+
+.nivel-html {
+    width: 150px;
+}
+
+.nivel-css {
+    width: 85px;
+}
+
+.nivel-python {
+    width: 140px;
 }
 
 @media (max-width: 400px) {
